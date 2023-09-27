@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
+}
+
+.main{
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+  
+
+}
+.ball{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0px;
+    border-radius: 50%;
+    background-color: cyan;
+    animation: moving 5s linear infinite;
+    /* animation-name: moving;
+    animation-duration: 5s;
+     */
+}
+@keyframes moving{
+    0%{
+        top:0;
+        left: 0;
+        
+    }
+    25%{
+    
+        top:0%;
+        left:348px
+    }
+    50%{
+       
+        top:348px;
+        left: 348px;
+    }
+    75%{
+    
+        top:348px;
+        left: 0px;
+    }
+    100%{
+    
+        top:0%;
+        left: 0;
+    }
+}
+#container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
